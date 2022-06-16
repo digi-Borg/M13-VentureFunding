@@ -7,89 +7,89 @@
 
 ## Background
 
-This project constructs a neural network program to predict which startup investments will be successful for a venture capital firm. Using historical data of 34,000 funding deals certain features are used to construct a binary classifier model to make predictions for funding successful business ventures. In order to construct a Neural Network(NN) model, Tensorflow and Keras are employed from the python library to build a NN deep learning program employing algorithms. Using an algorithm optimizer function to shape the NN on trained data, it molds a model that reduces losses in order to make more accurate predictions. This NN is compiled to test different parameters and then evaluate itself for a binary classification model to predict if its funding for startups will be successful.   
+This project constructs a Neural Network(NN) program to predict which startup investments will be successful for a venture capital firm. Using historical data of 34,000 funding deals certain features are used to construct a binary classifier model to make predictions for funding successful business ventures. In order to construct a NN model, Tensorflow and Keras are used from the python library to build a NN deep learning program employing algorithms. Using an algorithm optimizer function to shape the NN on trained data, it molds a model that reduces losses in order to make more accurate predictions. This NN is compiled to test different parameters and then evaluate its binary classification model accuracy that predicts if funding for startups will be successful.   
 
-The exponential growth of novel technology discoveries to make a better world across several industries requires funding for startup companies to implement their innovations. Applying these innovations requires capital funding to execute production for public utility. Most funding comes from private investors and venture capital(VC) firms willing to risk capital on novel unproven ideas for respective industry markets. To mitigate investment losses a financial application model is utilized to preprocess data for a NN, compile, train, and evaluate a NN model and then optimize it. The optimization process .  Conventional wisdom translates comparative metrics from ‘bricks to clicks’ for online ‘search traffic’ trends. This serves as an indicator of increasing or decreasing revenue interpreting it as a predictor of rising or falling stock prices.  
+With the exponential growth of novel technology discoveries in several industries to make a better world, many new innovations are being forged into implementation by startup companies to apply their discoveries. Applying these innovations requires capital funding to execute production for public utility. Most funding comes from private investors and venture capital(VC) firms willing to risk capital on novel unproven ideas for respective industry markets. To mitigate investment losses a financial application model is utilized to preprocess data for a NN, then compile it, train it, evaluate it and then optimize a NN model. The optimization process seeks to improve the NN model's accuracy score and lower the loss calculation. Using Keras, the NN models parameters, layer configuration, input weights, activation functions and evaluation metrics are saved in a Hierarchical DataFormat HDF5Links to an external site file for future analysis and reference.   
 
-A successful VC firm that mitigates capital risk is more aptly able to raise greater investor interest and increase amount of funding to ensure successful startup chances. 
-  
-
-The FinTech app technology in this program utilizes TensorFlow and Keras (the deep learning framework) from the Python library . TensorFlow is an open source platform for machine learning allowing code to run across platforms more efficiently. Keras is a deep learning framework serving as an abstract of TensorFlow used to simplify the coding process. This allows more time to focus on tuning the optimization of NN models and evaluating them to solve business problems.  In this case we are looking for increasing probability of investing in successful start-ups, using an . ts purpose is to find patterns and correlation between non-linear variables to ascertain predictable relationships.  FB Prophet is used to analyze historical time series data and fit non-linear trends into a times series model to find seasonal effects with historical data and make forecasts. The forecast model of time series data can then be used to make presumptions about search traffic trends and future stock price movements. 
+ The FinTech app technology in this program utilizes TensorFlow's open source platform for machine learning that allows code to run across platforms more efficiently. And Keras (the deep learning framework) from the Python library serves as an abstract of TensorFlow to simplify the coding process. This allows more time to focus on tuning the optimization of NN models and evaluating them to solve business problems. The purpose of using deep learning NN models in this case is to experiment with several algorithms models and test the performance of binary classification outcomes. In this case, we are looking for increasing probability of investing in successful start-ups, while minimizing capital risk in the predictions.  
  
+ A successful VC firm that mitigates capital risk is more aptly able to raise greater investor interest and increase amount of funding to ensure more successful startup chances. 
+
+---
+## Evaluation Results
+
+The following evaluation describes the performance test of the imported models, with the loss and accuracy metric scores of all four neural network machine learning models.
+
+* NN Original Model: 
+  * Original nn features: 2 hiddenlayers 'relu', with 50epochs
+  * Original nn Model Accuracy: 0.7289
+  * Original nn Model Loss: 0.5561     Where '0' represents a 'healthy loan' and, '1' represents a high-risk-loan for the scores. 
+  
+* NN Alternative Model 1 Results:
+  * nn_Al features: 1 hiddenlayer 'relu', with 50epochs       
+  * nn_Al Accuracy: 0.7310
+  * nn_Al Loss: 0.5590
+
+* NN Alternative Model 2 Results:
+  * nn_A2 features: 1 hiddenlayer 'relu', with 100epochs      
+  * nn_A2 Accuracy: 0.7287
+  * nn_A2 Loss: 0.5660 
+
+* NN Alternative Model 3 Results:
+  * nn_A3 features- 2 hiddenlayer 'relu' + 1 hiddenlayer 'tanh' , with 50epochs       
+  * nn_A3 Accuracy: 0.7296
+  * nn_A3 Loss: 0.5508 
 
 ---
 
 ## Technologies
 
-The software operates on python 3.9 with the installation package imports embedded with Anaconda3 installation. Google Colab is an IDE that creates an interactive environment to write Python code on the ‘Colab notebook’, which hosts the ‘Jupyter notebook’ in the cloud. This allows the notebook to be saved into one’s Google Drive account for safe storage, easy access anywhere and be shared with others. The tools that you need for this module, include [fbprophet], [datetime], [pystan] and [pyviz hvplot] libraries. 
-
-To work with time series data Python and Pandas supply functions through the [datetime] objects. For forecasting [fbprophet] is used with its dependency [pystan]. 'PyViz' is a single platform for accessing multiple visualization libraries from Python which needs installation of [hvPlot] and its dependency [holoviews] for charting in this program. 
+The software operates on python 3.9 with the installation package imports embedded with Anaconda3 installation. Pandas and scikitlearn are imported libraries for this program. Additional application tools that you need for this module include TensorFlow 2.0 library that should already be installed in the default Conda environmentand. Keras is the popular deep learning framework that serves as a high-level API for TensorFlow 2.0. Pleaase reference the latest official [TensorFlow Install Guide](https://www.tensorflow.org/install/pip) to troubleshoot issues.   
 
 * [anaconda3](https://docs.anaconda.com/anaconda/install/windows/e) 
 
-* [GoogleColab](https://colab.research.google.com/) 
+* [sklearn](https://scikit-learn.org/stable/install.html) 
 
-*  [FBProphet](https://facebook.github.io/prophet/) 
+* [TensorFlow](https://www.tensorflow.org/) 
 
-* [pyviz hvplot](https://hvplot.holoviz.org/index.html#) .
-
-.
-
+* [Keras](https://keras.io/getting_started/) . 
 ---
 
 ## Installation Guide
 
-Before running the applications first navigate to [Google Colab](https://colab.research.google.com/) the drive must be mounted with google colab as coded in A1 below. Then it needs configuration by installing the ‘python’, ‘fbprophet’, and ‘hvplot’ libraries below and import them. To utilize ‘.csv’ files ‘google colab drive’ must be mounted as coded in B1 procedure below.  
-
-Also, because of Colab’s interactive nature it renders charts differently than Jupyter notebook and to avoid an empty chart follow C1 below.  
+Before running the applications first navigate to [TensorFlow](https://www.tensorflow.org/install/pip#windows) for installation instructions. Then verify if the installation as been completed. Using `python -c "import tensorflow as tf;print(tf.__version__)"`. Keras is included with TensorFlow 2.0 but still needs verification prior to use `python -c "import tensorflow as tf;print(tf.keras.__version__)"`The output should show version 2.2.4-tf or later. 
 
 
 ```python libraries
-!pip install pystan
-!pip install fbprophet
-!pip install hvplot
-!pip install holoviews
+pip install --upgrade tensorflow
+python3 -m pip install tensorflow
+from tensorflow import keras
 ```
 ```from pathlib import Path
-import pandas as pd 
-import hvplot.pandas 
-import holoviews as hv 
-import datetime as dt
-from fbprophet import Prophet 
-import numpy as np
-
-A1) To mount the drive with Colab run the following command: 
-        [from google.colab import drive]
-        [drive.mount('/content/drive')]
-
-    2) confirm the mount: [Mounted at /content/drive]
-
-B1) To upload .csv files from your computer to Google Colab enter the following command: 
-        [from google.colab import files]  
-        [uploaded = files.upload()]
-
-C1) To utilize holoviews charts enter the code before each hvplot:    
-        [hv.extension('bokeh)]
-
-
+import pandas as pd
+import tensorflow as tf
+from tensorflow.keras.layers import Dense
+from tensorflow.keras.models import Sequential
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import StandardScaler,OneHotEncoder 
 ```
 
 ---
 # Usage
 
-This application is launched from web-based Google Colab cloud utilizing Pandas which is designed for data analysis to write and read code in an IDE and review results through the Python libraries. The Anaconda3 software application includes the Pandas libraries; **'PyViz' including ‘hvPlot’.** They are utilized for high-level plot charts for this program from the Python visualization package. **Holoviews** imported from the Bokeh library for **hvplot** to run charts in Colab. 
+This application is launched from web-based Jupyter notebook utilizing Pandas and scikitlearn `StandardScaler` to preprocess the data, along with `OneHotEncoder` to encode categorical variables for the NN model computations. TensorFlow's Keras `Sequential` framework sets the design of the NN layer structure so data can flow sequentially between each layer. It's `Dense`module allows additional NN layers to be added to the model framework. TensorFlow is used to compile a NN model using `binary_crossentropy` function,`adam` optimizer and `accuracy` evaluation metrics.    
 
-The program is developed in Colab notebook on a jupyter **.ipny** file. The **fbprophet** library makes it possible to forecast using pandas timeseries data using algorithms and statistical models to assist in making future decisions from non-linear variables. 
+The program is developed in Jupyter notebook on a jupyter **.ipny** file. The Python library makes it possible to utilize TensorFlow and Keras build this NN deep learning machine algorithm. The design applies the model-fit-predict process to make a binary classification of whether a startup is successful or not.
  
 
-![Mercado Search Traffic Trends](Images/M11Chllg-forecast_mercado_trends.png) 
+![NN Model Evals: Origin & A1](Images\Screenshot2022-06-15032835.png) 
 
-![Mercado Quarterly Sales Forecast](Images/M11Chllg-mercado_sales_prophet_forecast.png) 
+![NN Model Evals: A2 & A3](Images\Screenshot2022-06-15033615.png) 
 
 
 
 ```python
-forecasting_net_prophet.ipynb
+venture_funding_with_deep_learning.ipynb
 ```
  
 
